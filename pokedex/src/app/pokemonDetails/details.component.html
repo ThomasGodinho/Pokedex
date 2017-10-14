@@ -1,0 +1,22 @@
+<div class="container-fluid bgDetails">
+    <div class="container">
+        <h2>
+            details du Pokemon !
+        </h2>
+        <div class="col-md-offset-2 col-md-4 name">
+            <p>Nom : {{(pokemonDetail | async)?.name}}</p>
+            <p>Poids : {{(pokemonDetail | async)?.weight}} lb</p>
+            <p>Taille : {{(pokemonDetail | async)?.height}} inch</p>
+            <div *ngFor="let ability of (pokemonDetail | async)?.abilities">
+                <p> Capacité : {{ability.ability.name}}</p>
+            </div>
+        </div>
+        <div class="col-md-4 imgPokemon">
+            <img [src]="(pokemonDetail | async)?.sprites.front_default">
+        </div>
+    </div>
+    <div class="container text-center">
+        <a class="btn btn-primary" [routerLink]="['/']">retour</a>
+    </div>
+
+</div>
