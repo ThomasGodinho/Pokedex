@@ -1,5 +1,5 @@
 # Pokedex
-Hackathon #1 à la Wild Code School 
+Hackathon #1 at the Wild Code School 
 
 Create a Pokedex in pair programming with https://github.com/matthieumarais/pokedex
 
